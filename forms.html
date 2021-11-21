@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "CSE": {
+    "1st sem": ["applied maths 1", "applied chemistry", "applied physics 1", "engg mechanics","progg in c language"],
+    "2nd sem": ["applied maths 2", "applied physics 2", "evs", "basic electrical engg","progg in c language"],
+    "3rd sem": ["data structures", "discrete structures", "dbms", "software engg"],
+    "4th sem": ["computer organisation","design and analysis of algorithms","operating systems","oop","disaster management"],
+    "5th sem": ["computer networks","artificial intelligence","modelling and simulation","human values"],
+    "6th sem": ["wireless networks","microprocessor and interfacing","compiler design","multimedia technologies"],
+    "7th sem": ["mobile computing","machine learning"],
+    "8th sem": ["embedded system design"]
+  },
+  "CSAI": {
+    "1st sem": ["applied maths", "applied physics", "oop","intelligent systems","communication skills"],
+    "2nd sem": ["probability and statistics", "dbms", "psup","intro to data science","evs"],
+    "3rd sem": ["data structures","discrete maths","artificial intelligence"]
+  },
+  "IT": {
+    "1st sem": ["applied maths 1", "applied chemistry", "applied physics 1", "engg mechanics","progg in c language"],
+    "2nd sem": ["applied maths 2", "applied physics 2", "evs", "basic electrical engg","progg in c language"],
+    "3rd sem": ["data structures", "discrete structures", "dbms", "software engg"],
+    "4th sem": ["computer organisation","design and analysis of algorithms","operating systems","oop","disaster management"],
+    "5th sem": ["computer networks","artificial intelligence","modelling and simulation","human values"],
+    "6th sem": ["wireless networks","cloud computing","data mining and machine learning",],
+    "7th sem": ["mobile computing","software testing"],
+    "8th sem": ["information and network security"]
+ },
+ "ECE": {
+    "1st sem": ["applied maths 1", "applied chemistry", "applied physics 1", "engg mechanics","progg in c language"],
+    "2nd sem": ["applied maths 2", "applied physics 2", "evs", "basic electrical engg","progg in c language"],
+    "3rd sem": ["analog electronics", "signals and systems", "network analysis and synthesis", "digital electronics"],
+    "4th sem": ["linear integrated circuits","digital system designs","electromagnetic field theory","communication systems"],
+    "5th sem": ["digital communication systems","modeling and simulation","control systems","ethics and human values"],
+    "6th sem": ["digital signal processing","information theory and coding","vlsi design","microprocessors and microcontrollers"]
+ },
+ "MECHANICAL": {
+    "1st sem": ["applied maths 1", "applied chemistry", "applied physics 1", "engg mechanics","progg in c language"],
+    "2nd sem": ["applied maths 2", "applied physics 2", "evs", "basic electrical engg","progg in c language"],
+    "3rd sem": ["production tech 1", "strength of materials", "thermal engg 1", "numerical techniques for engg"],
+    "4th sem": ["production tech 2","theory of machines","engg materials","thermal engg","disaster management"],
+    "5th sem": ["machine design","fluid mechanics","automobile engg","human values"],
+    "6th sem": ["heat transfer","computer aided design","production management","principles of management"],
+    "7th sem": ["finite element analysis","mechatronics"],
+    "8th sem": ["computer aided manufacturing","robotics and computer integrated manufacturing"]
+ }   
+ 
+}
+window.onload = function() {
+  var branchSel = document.getElementById("branch");
+  var semSel = document.getElementById("sem");
+  var subjectSel = document.getElementById("subject");
+  for (var x in subjectObject) {
+    branchSel.options[branchSel.options.length] = new Option(x, x);
+  }
+  branchSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    subjectSel.length = 1;
+    semSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      semSel.options[semSel.options.length] = new Option(y, y);
+    }
+  }
+  semSel.onchange = function() {
+    //empty Chapters dropdown
+    subjectSel.length = 1;
+    //display correct values
+    var z = subjectObject[branchSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      subjectSel.options[subjectSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>   
+<body>
+
+<h1>welcome to expedita!</h1>
+<form action=" https://drive.google.com/drive/folders/1JUpzIVJO05dWsaG2ADOJGzy-QkbE5c9U?usp=sharing">
+
+<form name="form1" id="form1" action="/action_page.php">
+Branch: <select name="branch" id="branch">
+    <option value="" selected="selected">Select branch</option>
+  </select>
+  <br><br>
+Semester: <select name="sem" id="sem">
+    <option value="" selected="selected">Please select branch first</option>
+  </select>
+  <br><br>
+Subject: <select name="subject" id="subject">
+    <option value="" selected="selected">Please select semester first</option>
+  </select>
+  <br><br>
+
+  <input type="submit" value="Submit">  
+</form>
+
+</body>
+</html>
