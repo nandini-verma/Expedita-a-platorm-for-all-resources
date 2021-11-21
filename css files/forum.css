@@ -1,0 +1,290 @@
+body{
+    background-color: #041a17;
+    height: 100%
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color:#222a37;
+    font-size: 50px;
+    font: Courier New (monospace);
+    text-align: center;
+}
+ .container{
+     width: 80%;
+     margin: auto;
+ }
+
+ header{
+     background: #97dada;
+ }
+
+.logo{
+	float: left;
+}
+.homeimg{   background-image: url(/C:/Users/nnendes/Documents/website/css/homeimg.jpg);
+	align-content: left;
+	width: 50;
+	height: 50; 
+}
+nav{
+	float: right;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.center{
+    display: block;
+  margin: auto;
+}  
+
+
+
+.tag{
+	text-align: center;
+	color:  rgb(228, 227, 170);
+	font-size: 25px;
+}
+
+.pagina{
+	align-content: center;
+    width:auto;
+    height:auto;     
+}
+ 
+.linha{
+	align-content: center;
+    width:auto;
+    padding:5px;
+    height:auto;
+    display:table;      
+}
+
+.tile{
+    height:250px;   
+    width:250px;  
+    float: left;
+    margin:16px; 
+    object-fit: cover;
+    
+}
+ 
+.tileLargo{
+    width:210px;
+}
+
+.firsttile{
+	margin-left: 115px;
+}
+
+.semimg1{
+	background-image: url(/home/nandini/program/move/website/css/semimg1.png);
+}
+.semimg2{
+	background-image: url(/home/nandini/program/move/website/css/semimg2.png);
+}
+.semimg3{
+	background-image: url(/home/nandini/program/move/website/css/semimg3.png);
+}
+.semimg4{
+	background-image: url(/home/nandini/program/move/website/css/semimg4.png);
+}
+.semimg5{
+	background-image: url(/home/nandini/program/move/website/css/semimg5.png);
+}
+.semimg6{
+	background-image: url(/home/nandini/program/move/website/css/semimg6.png);
+}
+.semimg7{
+	background-image: url(/home/nandini/program/move/website/css/semimg7.png);
+}
+.semimg8{
+	background-image: url(/home/nandini/program/move/website/css/semimg8.png);
+}
+.tag{
+	text-align: center;
+	color:  rgb(228, 227, 170);
+	font-size: 25px;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.center{
+    display: block;
+  margin: auto;
+}  
+
+
+
+.tag{
+	text-align: center;
+	color:  rgb(228, 227, 170);
+	font-size: 25px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+h1, h4, ol {
+    margin: 0;
+}
+p {
+    margin: 5px 0;
+}
+.top-bar {
+    background-color: skyblue;
+    padding: 0 40px;
+}
+.main {
+    background-color: #b6cac9;
+    padding: 10px 15px;
+}
+.row {
+    padding: 5px 0;
+}
+.bottom {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.timestamp {
+    padding-right: 10px;
+}
+
+ 
+
+
+
+
+.footer{
+  background: #303036 ;
+  color: #d3d3d3;
+  height: 300px;
+  position: relative;
+
+}
+
+.footer.footer-content{
+
+
+}
+
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height:30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.page-wrapper{
+    min-height: 100%;
+
+}
+.page-wrapper a:hover{
+    color: #006669
+}
+
+.footer{
+    background: #303036 ;
+    color: #d3d3d3;
+    height: 300px;
+    position: relative;
+  
+  }
+  
+  .footer .footer-content{
+      border: 1px ;
+      height: 250px;
+      display: flex;
+  }
+  
+  .footer .footer-content .footer-section{
+      flex: 1;
+      padding: 25px;
+      border: 1px solid white;
+  
+  
+  }
+  
+  
+  .footer .footer-bottom {
+      background: #343a40;
+      color: #686868;
+      height:30px;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 20px;
+      width: 100%;
+      border: 1px solid white;
+      
+      .footer{
+  background: #303036 ;
+  color: #d3d3d3;
+  height: 300px;
+  position: relative;
+
+}
+
+.footer .footer-content{
+	border: 1px ;
+	height: 250px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section{
+	flex: 1;
+	padding: 25px;
+	border: 1px solid white;
+
+
+}
+
+
+.footer .footer-bottom {
+	background: #343a40;
+	color: #686868;
+	height:30px;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+	width: 100%;
+    border: 1px solid white;
+}
+
+.page-wrapper{
+	min-height: 100%;
+
+}
+.page-wrapper a:hover{
+	color: #006669
+};
+  }
+  
+  .page-wrapper{
+      min-height: 100%;
+  
+  }
+  .page-wrapper a:hover{
+      color: #006669
+  }
